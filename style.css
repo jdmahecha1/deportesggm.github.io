@@ -22,14 +22,15 @@ body .container {
 }
 
 body .container header {
-  background: url(3.jpg) center / cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 400px;
+  background: url(3.jpg);
+  background: url(sedecampestre.jpeg);
+
+  min-height: 300px;
   padding: 20px 50px 60px;
   border-radius: 50px;
+  list-style: none;
 }
+
 
 body .container header .category {
   text-align: left;
@@ -73,7 +74,7 @@ body .container header .info .title {
 
 body .container header .info .subtitle {
   min-width: 100%;
-  margin:  0auto 35px;
+  margin: 0auto 35px;
   font-size: 1.4rem;
 }
 
@@ -659,30 +660,8 @@ img {
   width: 400px;
   height: 400px;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -721,7 +700,7 @@ body article p {
 }
 
 body .container header .logica {
-  
+
 
   margin-top: 5px;
   font-size: 1.5rem;
@@ -743,4 +722,74 @@ body .mordo {
   margin-bottom: 20px;
   font-size: 1.25rem;
 
+}
+
+.go-top-container{
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: -1;
+}
+
+.go-top-button{
+  width: 0rem;
+  height: 0rem;
+  background: #63e65e;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i{
+  position: relative;
+  font-size: 1.9rem;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #ffffff;
+  transition: .2s;
+}
+
+.show{
+  z-index: 10;
+}
+
+.show .go-top-button{
+  animation: poput .3s ease-in-out;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: 11;
+}
+
+.show i{
+  transform: translate(-50%, 50%) scale(1); 
+}
+
+@keyframes popup{
+  0%{
+    width: 0rem;
+    height: 0rem;
+  }
+  50%{
+    width: 8rem;
+    height: 8rem;
+  }
+  100%{
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+
+}
+
+.div {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
 }
