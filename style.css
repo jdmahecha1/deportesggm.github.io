@@ -252,13 +252,13 @@ body article p {
 }
 
 .main_switcher {
-  width: 160px;
-  height: 68px;
+  width: 100px;
+  height: 44px;
   background-color: var(--color-switcher);
   margin: 1rem;
   margin-top: 1rem;
   padding: 2px 5px;
-  border-radius: 50px;
+  border-radius: 100px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -275,8 +275,8 @@ body article p {
 }
 
 .main_option {
-  width: 65px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background-color: var(--color-active);
   border: var(--border-option);
   border-radius: 50%;
@@ -787,9 +787,20 @@ body .mordo {
 
 }
 
-.div {
-  width: 400px;
-  height: 400px;
+
+
+.Iniciofutbol{
+   width: 500px;
+   height: 400px;
+   display: flex;
+   justify-content: left;
+  border-radius: 30%;
+  
+  }
+.atrox {
   display: flex;
-  justify-content: center;
+}
+
+.temo {
+  margin-left: 20px;
 }
