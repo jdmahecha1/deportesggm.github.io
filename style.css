@@ -835,3 +835,118 @@ body .mordo {
  }
 
  
+
+ .entrevista {
+  width: 100%;
+  min-height: 7vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(#111, #111, #111);
+ }
+
+ .neon-text {
+  text-transform: uppercase;
+  font-size: 5rem;
+  cursor: pointer;
+  transition: .3s linear;
+  color: transparent;
+  -webkit-text-stroke: 2px #63e65e;
+  background-image: linear-gradient(to left,
+  #63e65e, rgb(111, 207, 143),black,rgb(35, 31, 31));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  animation: move 30s linear infinite;
+
+  
+ }
+
+ @keyframes move {
+  100%{
+    background-position: 2000px 0;
+  }
+ }
+
+ .neon-text:hover {
+  color: #63e65e;
+  text-shadow: 0 0 10px rgb(111, 207, 143),
+  0 0 20px rgb(111, 207, 143),
+  0 0 40px rgb(111, 207, 143),
+  0 0 80px rgb(111, 207, 143),
+  0 0 120px rgb(111, 207, 143),
+  0 0 320px rgb(111, 207, 143);
+ }
+
+ .slider-box {
+  width: 700px;
+  height: auto;
+  margin: 50px;
+  overflow: hidden;
+  justify-content: left;
+ }
+
+ .slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: slide 20s infinite alternate ease-in-out;
+ }
+
+
+.slider-box li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.slider-box img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+
+
+.arthur {
+  text-transform: uppercase;
+  font-size: 4.4rem;
+  cursor: pointer;
+  transition: .3s linear;
+  color: transparent;
+  -webkit-text-stroke: 2px #63e65e;
+  background-image: linear-gradient(to left,
+  #63e65e, rgb(111, 207, 143),black,rgb(35, 31, 31));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  animation: move 25s linear infinite;
+  margin-left: 300px;
+
+  
+ }
+
+ @keyframes move {
+  100%{
+    background-position: 2000px 0;
+  }
+ }
+
+ .arthur:hover {
+  color: #63e65e;
+  text-shadow: 0 0 10px rgb(111, 207, 143),
+  0 0 20px rgb(111, 207, 143),
+  0 0 40px rgb(111, 207, 143),
+  0 0 80px rgb(111, 207, 143),
+  0 0 120px rgb(111, 207, 143),
+  0 0 320px rgb(111, 207, 143);
+ }
