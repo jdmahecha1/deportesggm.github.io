@@ -9768,3 +9768,61 @@ h6,
   height: 86px;
   text-align: justify;
     }
+
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      align-items: center;
+      gap: 1rem;
+      padding: 0;
+      background-color: #7AB730;
+    }
+    
+    
+    
+    .navigation>li {
+      display: flex;
+      position: relative;
+      cursor: pointer;
+      font-size: 1.50rem;
+    }
+    
+    .navigation>li>a {
+      color: #0b2e13;
+      border-bottom: 15px solid transparent;
+     
+      text-decoration: none;
+      font-weight: 500;
+      background-image: linear-gradient(to right,
+          var(--primary),
+          var(--primary) 50%,
+          white 50%);
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 0.2rem 0;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+    }
+    
+    .navigation>li>a:before {
+      content: '';
+      background:  #7AB730;
+      display: block;
+      position: absolute;
+      bottom: -0.125rem;
+      left: 0;
+      width: 0;
+      height: 0.125rem;
+      
+    }
+    
+    
+    
+    .navigation>li>a:hover::before {
+      width: 100%;
+    }
+    
